@@ -4,6 +4,7 @@ class Car:
         self.clean_mark = clean_mark
         self.brand = brand
 
+
 class CarWashStation:
     def __init__(
         self,
@@ -25,7 +26,6 @@ class CarWashStation:
             / self.distance_from_city_center
         )
         return round(price, 1)
-
 
     def wash_single_car(self, car: "Car") -> float:
         if car.clean_mark < self.clean_power:
