@@ -17,7 +17,6 @@ class CarWashStation:
         self.average_rating = average_rating
         self.count_of_ratings = count_of_ratings
 
-
     def calculate_washing_price(self, car: "Car") -> float:
         price = (
             car.comfort_class
@@ -34,7 +33,6 @@ class CarWashStation:
             return self.calculate_washing_price(car)
         else:
             return 0.0
-
 
     def serve_cars(self, cars: list["Car"]) -> float:
         income = 0.0
