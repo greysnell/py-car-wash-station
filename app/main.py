@@ -67,5 +67,6 @@ def main() -> None:
     print(wash_station.count_of_ratings)
     print(wash_station.average_rating)
 
+
 if __name__ == "__main__":
     main()
