@@ -9,6 +9,7 @@ class Car:
         self.clean_mark = clean_mark
         self.brand = brand
 
+
 class CarWashStation:
     def __init__(
         self,
@@ -53,6 +54,7 @@ class CarWashStation:
         self.count_of_ratings += 1
         self.average_rating = round(total_rating / self.count_of_ratings, 1)
 
+
 def main() -> None:
     bmw = Car(3, 3, "BMW")
     audi = Car(4, 9, "Audi")
@@ -71,6 +73,7 @@ def main() -> None:
     wash_station.rate_service(5)
     print(wash_station.count_of_ratings)
     print(wash_station.average_rating)
+
 
 if __name__ == "__main__":
     main()
